@@ -7,6 +7,7 @@ videos = list(
         and getattr(x, "resolution", None) and not getattr(x, "is_progressive", True), yt.streams)
 )
 
+print(yt.title)
 for i, video in enumerate(videos):
     resolution = getattr(video, "resolution")
     print(f"{i + 1}: {resolution}")
